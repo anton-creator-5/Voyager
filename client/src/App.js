@@ -1053,7 +1053,7 @@ function App() {
 
           <div className="hero-buttons">
             <a className="primary-btn" href="#waitlist">Join the Waitlist</a>
-            <a className="secondary-btn" href="#demo">Book Early Access</a>
+            <a className="secondary-btn" href="#waitlist">Book Early Access</a>
           </div>
         </div>
       </header>
