@@ -1,13 +1,25 @@
 {
-  "name": "voyager-server",
+  "name": "server",
   "version": "1.0.0",
+  "description": "Voyager Maritime Intelligence - SlopChest Server",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
+  "keywords": [
+    "maritime",
+    "saas",
+    "inventory",
+    "slopchest"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^5.1.7"
   }
 }
