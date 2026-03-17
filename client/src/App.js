@@ -100,7 +100,7 @@ function App() {
 
   const fetchWaitlist = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/waitlist");
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/waitlist");
       const data = await response.json();
       setEntries(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -111,7 +111,7 @@ function App() {
 
   const fetchShips = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/ships");
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/ships");
       const data = await response.json();
       setShips(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -122,7 +122,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/products${shipQuery}`);
+      const response = await fetch(`https://voyager-production-c301.up.railway.app/api/products${shipQuery}`);
       const data = await response.json();
       setProducts(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -133,7 +133,7 @@ function App() {
 
   const fetchMovements = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/inventory${shipQuery}`);
+      const response = await fetch(`https://voyager-production-c301.up.railway.app/api/inventory${shipQuery}`);
       const data = await response.json();
       setMovements(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -144,7 +144,7 @@ function App() {
 
   const fetchSales = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/sales${shipQuery}`);
+      const response = await fetch(`https://voyager-production-c301.up.railway.app/api/sales${shipQuery}`);
       const data = await response.json();
       setSales(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -155,7 +155,7 @@ function App() {
 
   const fetchDashboard = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/dashboard${shipQuery}`);
+      const response = await fetch(`https://voyager-production-c301.up.railway.app/api/dashboard${shipQuery}`);
       const data = await response.json();
 
       setDashboard({
@@ -213,7 +213,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/waitlist", {
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -243,7 +243,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/ships", {
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/ships", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -266,7 +266,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/products", {
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -298,7 +298,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/inventory", {
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/inventory", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -330,7 +330,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/sales", {
+      const response = await fetch("https://voyager-production-c301.up.railway.app/api/sales", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
